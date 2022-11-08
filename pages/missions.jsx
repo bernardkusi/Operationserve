@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React, { useState } from "react";
-import Layout from "../components/LAyout";
+import Layout from "../components/Layout";
 
 
 const missions = ({imageshown,setimageshown,navopen,togglenav}) => {
