@@ -21,7 +21,7 @@ const Header = ({navopen,togglenav}) => {
             <Link onClick={()=>togglenav(false)} href="/#contact">Contact</Link>
           </ul>
 
-          <div className="bars" onClick={togglenav}>
+          <div className="bars" onClick={()=>togglenav()}>
             <div className="bar"></div>
           </div>
         </nav>

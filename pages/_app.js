@@ -5,7 +5,8 @@ function MyApp({ Component, pageProps }) {
   const [imageshown, setimageshown] = useState(true);
   const [navopen, setnavopen] = useState(false);
   const togglenav = (value) => {
-      value?setnavopen(value):setnavopen(!navopen)
+      !value?setnavopen(!navopen):setnavopen(value)
+      console.log(navopen)
   };
   return (
     <Component
