@@ -9,7 +9,7 @@ const Layout = ({children,imageshown,imagetext,image,navopen,togglenav}) => {
     <Header navopen={navopen} togglenav={togglenav}/>
     <main>
     {imageshown && (<div className="pageimage">
-      {image && <Image  src="/images/gallery.jpg" alt="pageimage" fill={true} objectFit={"cover'"}/>}
+      {image && <Image  src={"/images/gallery.jpg"} alt="pageimage" layout="fill"/>}
     <p className="text">{imagetext && imagetext}</p>
     </div>)}
     {children}
