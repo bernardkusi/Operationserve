@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-const Footer = () => {
+const Footer = ({togglenav}) => {
   return (
     <footer>
      <div>
@@ -12,10 +12,10 @@ const Footer = () => {
         beautiful fabric which prompts transformation.
       </p>
       <ul>
-            <Link href="/">Home</Link>
-            <Link href="missions">Missions</Link>
-            <Link href="/gallery">Gallery</Link>
-            <Link href="/#contact">Contact</Link>
+            <Link  onClick={()=>togglenav(false)} href="/">Home</Link>
+            <Link  onClick={()=>togglenav(false)} href="missions">Missions</Link>
+            <Link  onClick={()=>togglenav(false)} href="/gallery">Gallery</Link>
+            <Link  onClick={()=>togglenav(false)} href="/#contact">Contact</Link>
       </ul>
       <ul>
         <Link href="#">Home</Link>

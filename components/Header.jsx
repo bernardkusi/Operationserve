@@ -8,17 +8,17 @@ const Header = ({navopen,togglenav}) => {
   return (
     <header>
         <nav className={navopen?"open":""}>
-          <Link href="/">
+          <Link onClick={()=>togglenav(false)} href="/">
             <Image alt="alt" width={40} height={40} src={"/images/os-logo.jpg"}></Image>
           </Link>
           <ul>
-            <Link href="/">Home</Link>
-            <Link href="missions">Missions</Link>
-            <Link href="missions#services">Services</Link>
-            <Link href="/#history">History</Link>
-            <Link href="/#leadership">Leadership</Link>
-            <Link href="/gallery">Gallery</Link>
-            <Link href="/#contact">Contact</Link>
+            <Link onClick={()=>togglenav(false)} href="/">Home</Link>
+            <Link onClick={()=>togglenav(false)} href="missions">Missions</Link>
+            <Link onClick={()=>togglenav(false)} href="missions#services">Services</Link>
+            <Link onClick={()=>togglenav(false)} href="/#history">History</Link>
+            <Link onClick={()=>togglenav(false)} href="/#leadership">Leadership</Link>
+            <Link onClick={()=>togglenav(false)} href="/gallery">Gallery</Link>
+            <Link onClick={()=>togglenav(false)} href="/#contact">Contact</Link>
           </ul>
 
           <div className="bars" onClick={togglenav}>

@@ -15,7 +15,7 @@ const Layout = ({children,imageshown,imagetext,image,navopen,togglenav}) => {
     {children}
     <div className="pagebottom"></div>
     </main>
-    <Footer/>
+    <Footer  navopen={navopen} togglenav={togglenav}/>
     </>
   )
 }
