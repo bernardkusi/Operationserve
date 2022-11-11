@@ -40,7 +40,7 @@ const Footer = ({togglenav}) => {
         <button className="click">Send Message</button>
       </form>
      </div>
-      <p className="copy">Website developed by <Link href="#">Bernard Dwumfour</Link> &copy;2022 </p>
+      <p className="copy">Website developed by <Link href="https://bernarddwumfour.vercel.app/">Bernard Dwumfour</Link> &copy;2022 </p>
     </footer>
   );
 };

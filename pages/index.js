@@ -54,6 +54,7 @@ export default function Home({ navopen, togglenav }) {
           <div className="swiper">
             <Swiper
               spaceBetween={0}
+              
               // slidesPerView={3}
               onSlideChange={() => console.log("slide change")}
               onSwiper={(swiper) => console.log(swiper)}

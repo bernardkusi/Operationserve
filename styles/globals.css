@@ -48,6 +48,7 @@ nav .bars .bar {
   height: 3px;
   background: #fff;
   position: relative;
+  border-radius: 2px;
 }
 
 nav .bars .bar::before {
@@ -57,6 +58,7 @@ nav .bars .bar::before {
   height: 3px;
   background: #fff;
   top: 8px;
+  border-radius: 2px;
 }
 
 nav .bars .bar::after {
@@ -66,6 +68,7 @@ nav .bars .bar::after {
   height: 3px;
   background: #fff;
   top: 16px;
+  border-radius: 2px;
 }
 
 nav > a {
@@ -91,6 +94,28 @@ nav ul a:hover, nav ul a:active {
 
 main {
   min-height: 100vh;
+}
+
+.images {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 350px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
+  gap: 2px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.images > div {
+  margin-bottom: 2rem;
+}
+
+.images .img {
+  width: 100%;
+  height: 250px;
+  background: lightgrey;
 }
 
 .pageimage {
@@ -174,7 +199,7 @@ main {
 
 .page .swiper {
   width: 100%;
-  height: calc(90px + 12vw);
+  height: calc(100px + 12vw);
   background: lightgrey;
   position: relative;
   left: 50%;
@@ -422,7 +447,7 @@ footer ul a:hover {
     width: fit-content;
   }
   .swiper {
-    height: calc(40px + 10vw) !important;
+    height: calc(90px + 13vw) !important;
   }
   nav {
     -webkit-box-align: start;
